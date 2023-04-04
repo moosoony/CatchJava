@@ -9,7 +9,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.jsp" class="logo">
-                        <img src="resources/assets/images/logo.png" alt="">
+                        <img src="/resources/assets/images/logo.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
@@ -26,6 +26,7 @@
                         <li><a href="../original/browse.html">My Study</a></li>
                         <li><a href="../original/details.html">Study Room</a></li>
                         <li><a href="../original/streams.html">Admin</a></li>
+                        <li><a href="${contextPath}/Sign/Signin">Sign in</a></li>
                         <li><a href="../original/profile.html">Profile <img src="resources/assets/images/profile-header.jpg" alt=""></a></li>
                     </ul>
                     <a class='menu-trigger'>

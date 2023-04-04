@@ -10,7 +10,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-	<title>Cyborg - Awesome HTML5 Template</title>
+	<title>CatchJava - Awesome HTML5 Template</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

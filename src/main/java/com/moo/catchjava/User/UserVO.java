@@ -2,10 +2,11 @@ package com.moo.catchjava.User;
 
 public class UserVO {
     private Long id;
-    private String username;
     private String userid;
     private String nickname;
     private String password;
+    private String email;
+    private String username;
     private String phonenumber;
     private String postnumber;
     private String address1;

@@ -6,8 +6,8 @@
     <div class="row">
         <div class="col-lg-7">
             <div class="header-text">
-                <h6>Welcome To Cyborg</h6>
-                <h4><em>Browse</em> Our Popular Games Here</h4>
+                <h6>Welcome To CatchJava</h6>
+                <h4><em>Browse</em> Our Popular Studies Here</h4>
                 <div class="main-button">
                     <a href="../original/browse.html">Browse Now</a>
                 </div>

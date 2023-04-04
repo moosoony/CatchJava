@@ -1,4 +1,4 @@
-package com.moo.catchjava.VO;
+package com.moo.catchjava.User;
 
 public class UserVO {
     private Long id;

@@ -15,7 +15,7 @@ CREATE TABLE `user` (
         PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 */
-package com.moo.catchjava.DTO;
+package com.moo.catchjava.User;
 
 
 public class UserDTO {

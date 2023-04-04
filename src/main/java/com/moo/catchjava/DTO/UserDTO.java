@@ -15,10 +15,10 @@ CREATE TABLE `user` (
         PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 */
-package com.moo.catchjava.VO;
+package com.moo.catchjava.DTO;
 
 
-public class User {
+public class UserDTO {
     private Long id;
     private String username;
     private String userid;
@@ -130,7 +130,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserDTO{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", userid='" + userid + '\'' +

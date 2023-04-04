@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <!-- 파일이름을 지칭하는 네임스페이스 -->
-<mapper namespace="com.yuri.getjava.empMapper"> 
+<mapper namespace="com.moo.catchjava.empMapper">
 	
 
 </mapper>

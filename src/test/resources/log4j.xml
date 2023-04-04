@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.yuri.getjava">
+	<logger name="com.moo.catchjava">
 		<level value="info" />
 	</logger>
 	

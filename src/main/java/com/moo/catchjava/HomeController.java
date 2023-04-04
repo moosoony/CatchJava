@@ -1,4 +1,4 @@
-package com.yuri.getjava;
+package com.moo.catchjava;
 
 import java.text.DateFormat;
 import java.util.Date;

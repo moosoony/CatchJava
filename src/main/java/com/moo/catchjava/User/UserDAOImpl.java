@@ -1,9 +1,23 @@
 package com.moo.catchjava.User;
 
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+
+import javax.inject.Inject;
 
 @Repository
 public class UserDAOImpl implements UserDAO{
+    @Inject
+    private SqlSession sqlSession;
+
+    private static final String nameSpace="com.moo.catchjava.boardMapper";
+
+    // 사용자 추가 insert
+    @Override
+    public int insert(UserDTO userDTO) throws Exception {
+        return sqlSession.insert(nameSpace+".insert", userDTO);
+    }
+
     /*
     @Inject
 	private SqlSession sqlSession;

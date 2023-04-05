@@ -76,7 +76,7 @@
                         </div>
 
                         <div>
-                            <p class="mb-0">Don't have an account? <a href="${contextPath}/Sign/Signup" class="text-white-50 fw-bold">Sign Up</a>
+                            <p class="mb-0">Don't have an account? <a href="${contextPath}/user/Signup" class="text-white-50 fw-bold">Sign Up</a>
                             </p>
                         </div>
 
@@ -86,6 +86,8 @@
         </div>
     </div>
 </section>
-
+<!-- ***** Footer Start ***** -->
+<%@ include file="../include/footer.jsp" %>
+<!-- ***** Footer End ***** -->
 </body>
 </html>

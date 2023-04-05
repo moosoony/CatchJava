@@ -5,7 +5,10 @@
 package com.moo.catchjava.User;
 
 public interface UserDAO {
-   /*
+    // 사용자 추가 insert
+    public int insert(UserDTO userDTO) throws Exception;
+
+    /*
     // 삽입, 삭제, 갱신(수정) 메소드의 리턴타입은 되도록이면 int
 
     //전체목록을 가져오는 메소드

@@ -1,6 +1,6 @@
 package com.moo.catchjava.User;
 
-public class UserVO {
+public class User {
     private Long id;
     private String userid;
     private String nickname;

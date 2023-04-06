@@ -8,10 +8,11 @@ public class User {
     private String email;
     private String username;
     private String phonenumber;
-    private String postnumber;
+    private String zipcode;
     private String address1;
     private String address2;
     private String birthday;
     private String sex;
+    private String regdate;
     private String role;
 }

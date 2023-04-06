@@ -76,7 +76,7 @@
                         </div>
 
                         <div>
-                            <p class="mb-0">Don't have an account? <a href="${contextPath}/user/Signup" class="text-white-50 fw-bold">Sign Up</a>
+                            <p class="mb-0">Don't have an account? <a href="${contextPath}/user/signup" class="text-white-50 fw-bold">Sign Up</a>
                             </p>
                         </div>
 

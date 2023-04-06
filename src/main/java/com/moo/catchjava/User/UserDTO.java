@@ -20,16 +20,18 @@ package com.moo.catchjava.User;
 
 public class UserDTO {
     private Long id;
-    private String username;
     private String userid;
     private String nickname;
     private String password;
+    private String email;
+    private String username;
     private String phonenumber;
-    private String postnumber;
+    private String zipcode;
     private String address1;
     private String address2;
     private String birthday;
     private String sex;
+    private String regdate;
     private String role;
 
     public Long getId() {
@@ -72,6 +74,14 @@ public class UserDTO {
         this.password = password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getPhonenumber() {
         return phonenumber;
     }
@@ -79,13 +89,12 @@ public class UserDTO {
     public void setPhonenumber(String phonenumber) {
         this.phonenumber = phonenumber;
     }
-
-    public String getPostnumber() {
-        return postnumber;
+    public String getZipcode() {
+        return zipcode;
     }
 
-    public void setPostnumber(String postnumber) {
-        this.postnumber = postnumber;
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
     }
 
     public String getAddress1() {
@@ -119,6 +128,13 @@ public class UserDTO {
     public void setSex(String sex) {
         this.sex = sex;
     }
+    public String getRegdate() {
+        return regdate;
+    }
+
+    public void setRegdate(String regdate) {
+        this.regdate = regdate;
+    }
 
     public String getRole() {
         return role;
@@ -132,16 +148,18 @@ public class UserDTO {
     public String toString() {
         return "UserDTO{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
                 ", userid='" + userid + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
                 ", phonenumber='" + phonenumber + '\'' +
-                ", postnumber='" + postnumber + '\'' +
+                ", zipcode='" + zipcode + '\'' +
                 ", address1='" + address1 + '\'' +
                 ", address2='" + address2 + '\'' +
                 ", birthday='" + birthday + '\'' +
                 ", sex='" + sex + '\'' +
+                ", regdate='" + regdate + '\'' +
                 ", role='" + role + '\'' +
                 '}';
     }

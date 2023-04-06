@@ -4,9 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.moo.catchjava.boardMapper">
 
-<!--    <insert id="insert" parameterType="UserDTO">-->
-<!--        insert into user(id, username, userid, nickname, password, phonenumber, postnumber, address1, address2, birthday, sex, email)-->
-<!--        values (#{id}, #{username}, #{userid}, #{nickname}, #{password}, #{phonenumber}, #{postnumber}, #{address1}, #{address2},#{birthday},#{sex},#{email})-->
-<!--    </insert>-->
+    <insert id="insert" parameterType="UserDTO">
+        insert into user(id, username, userid, nickname, password, phonenumber, zipcode, address1, address2, birthday, sex, email, regdate, role)
+        values (#{id}, #{username}, #{userid}, #{nickname}, #{password}, #{phonenumber}, #{zipcode
+        }, #{address1}, #{address2},#{birthday},#{sex},#{email}, now(), 'USER')
+    </insert>
 
 </mapper>

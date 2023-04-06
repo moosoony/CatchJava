@@ -15,19 +15,19 @@ public class UserController {
     UserService userService;
 
     //    로그인 페이지
-    @RequestMapping(value = "user/Signin", method = RequestMethod.GET)
+    @RequestMapping(value = "user/signin", method = RequestMethod.GET)
     public String signin() {
         return "user/signin";
     }
 
     //    회원가입 페이지
-    @RequestMapping(value = "user/Signup", method = RequestMethod.GET)
+    @RequestMapping(value = "user/signup", method = RequestMethod.GET)
     public String signup() {
         return "user/signup";
     }
 
     //    회원가입 페이지
-    @RequestMapping(value = "user/Signup", method = RequestMethod.POST)
+    @RequestMapping(value = "user/signup", method = RequestMethod.POST)
     public String insert(UserDTO userDTO, HttpServletRequest request, RedirectAttributes rttr) throws Exception {
         request.setCharacterEncoding("UTF-8");
 
@@ -36,6 +36,6 @@ public class UserController {
         if (r > 0) {
             rttr.addFlashAttribute("msg", "회원가입에 성공하였습니다.");
         }
-        return "redirect:/";
+        return "redirect:/user/signin";
     }
 }

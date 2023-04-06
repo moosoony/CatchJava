@@ -48,7 +48,7 @@
             <div class="col-10">
                 <div class="card bg-dark text-white" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
-                        <form role="form" action="/sign/signup" method="post">
+                        <form role="form" action="/user/signup" method="post">
                         <div class="mb-md-5 mt-md-4 pb-5">
 
                             <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
@@ -61,25 +61,25 @@
 
                                     <div class="row justify-content-center text-start mb-5">
                                         <div class="form-outline form-white col-5">
-                                            <label class="form-label" for="userid">ID</label>
-                                            <input type="text" id="userid" class="form-control form-control-lg">
+                                            <label class="form-label" for="userid">* ID</label>
+                                            <input type="text" id="userid" class="form-control form-control-lg" name="userid">
                                         </div>
 
                                         <div class="form-outline form-white col-5">
-                                            <label class="form-label" for="nickname">Nickname</label>
-                                            <input type="text" id="nickname" class="form-control form-control-lg">
+                                            <label class="form-label" for="nickname">* Nickname</label>
+                                            <input type="text" id="nickname" class="form-control form-control-lg" name="nickname">
                                         </div>
                                     </div>
 
 
                                     <div class="row justify-content-center text-start mb-5">
                                     <div class="form-outline form-white col-5">
-                                        <label class="form-label" for="nickname">Password1</label>
-                                        <input type="password" id="password1" class="form-control form-control-lg"/>
+                                        <label class="form-label" for="password1">* Password1</label>
+                                        <input type="password" id="password1" class="form-control form-control-lg"name="password"/>
                                     </div>
 
                                     <div class="form-outline form-white col-5">
-                                        <label class="form-label" for="nickname">Password2</label>
+                                        <label class="form-label" for="password2">* Password2</label>
                                         <input type="password" id="password2" class="form-control form-control-lg"/>
 
                                     </div>
@@ -87,48 +87,48 @@
 
                                     <div class="row justify-content-center text-start mb-5">
                                     <div class="form-outline form-white col-10">
-                                        <label class="form-label" for="nickname">Email</label>
-                                        <input type="email" id="email" class="form-control form-control-lg">
+                                        <label class="form-label" for="nickname">* Email</label>
+                                        <input type="email" id="email" class="form-control form-control-lg" name="email">
                                     </div>
                                     </div>
 
                                     <div class="row justify-content-center text-start mb-5">
                                     <div class="form-outline form-white col-5">
-                                        <label class="form-label" for="nickname">Name</label>
-                                        <input type="text" id="username" class="form-control form-control-lg">
+                                        <label class="form-label" for="username">* Name</label>
+                                        <input type="text" id="username" class="form-control form-control-lg" name="username">
 
                                     </div>
 
                                     <div class="form-outline form-white text-start col-5">
-                                        <label class="form-label" for="phonenumber">Phone Number</label>
-                                        <input type="text" id="phonenumber" class="form-control form-control-lg">
+                                        <label class="form-label" for="phonenumber">* Phone Number</label>
+                                        <input type="text" id="phonenumber" class="form-control form-control-lg" name="phonenumber">
 
                                     </div>
                                     </div>
 
                                     <div class="row justify-content-center text-start">
                                         <div class="form-outline form-white col-10 mb-5">
-                                            <label class="form-label" for="postnumber">Post Number</label>
-                                            <input type="text" id="postnumber" class="form-control form-control-lg">
+                                            <label class="form-label" for="zipcode">* Zip Code</label>
+                                            <input type="text" id="zipcode" class="form-control form-control-lg" name="zipcode">
                                         </div>
                                     </div>
 
                                     <div class="row justify-content-center text-start">
                                     <div class="form-outline form-white col-10 mb-5">
-                                        <label class="form-label" for="address1">Address 1</label>
-                                        <input type="text" id="address1" class="form-control form-control-lg">
+                                        <label class="form-label" for="address1">* Address 1</label>
+                                        <input type="text" id="address1" class="form-control form-control-lg" name="address1">
                                     </div>
 
                                     <div class="form-outline form-white col-10 mb-5">
                                         <label class="form-label" for="address2">Address 2</label>
-                                        <input type="text" id="address2" class="form-control form-control-lg">
+                                        <input type="text" id="address2" class="form-control form-control-lg" name="address2">
                                     </div>
                                     </div>
 
                                     <div class="row justify-content-center text-start mb-5">
                                         <div class="form-outline form-white col-5">
                                             <label class="form-label" for="birthday">Birth Day</label>
-                                            <input type="date" id="birthday" class="form-control form-control-lg">
+                                            <input type="date" id="birthday" class="form-control form-control-lg" name="birthday">
                                         </div>
 
                                         <div class="form-outline form-white col-5">

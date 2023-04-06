@@ -4,6 +4,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import javax.inject.Inject;
+import java.util.Map;
 
 @Repository
 public class UserDAOImpl implements UserDAO{
@@ -12,11 +13,18 @@ public class UserDAOImpl implements UserDAO{
 
     private static final String nameSpace="com.moo.catchjava.boardMapper";
 
-    // 사용자 추가 insert
+    // 회원가입
     @Override
     public int insert(UserDTO userDTO) throws Exception {
         return sqlSession.insert(nameSpace+".insert", userDTO);
     }
+
+    @Override
+    public UserDTO login(Map<String, Object> map) throws Exception {
+        return sqlSession.selectOne(nameSpace+".login", map);
+    }
+
+
 
     /*
     @Inject

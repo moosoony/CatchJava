@@ -4,9 +4,14 @@
 
 package com.moo.catchjava.User;
 
+import java.util.Map;
+
 public interface UserDAO {
-    // 사용자 추가 insert
+    // 회원가입
     public int insert(UserDTO userDTO) throws Exception;
+
+    // 로그인
+    public UserDTO login(Map<String,Object> map) throws Exception;
 
     /*
     // 삽입, 삭제, 갱신(수정) 메소드의 리턴타입은 되도록이면 int

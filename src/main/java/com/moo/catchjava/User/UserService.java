@@ -1,6 +1,11 @@
 package com.moo.catchjava.User;
 
+import java.util.Map;
+
 public interface UserService {
-    // 사용자 추가 insert
+    // 회원가입
      int insert(UserDTO userDTO) throws Exception;
+
+     // 로그인
+   UserDTO login(Map<String, Object> map) throws Exception;
 }

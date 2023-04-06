@@ -30,14 +30,17 @@ public class UserController {
     @RequestMapping(value = "user/signin", method = RequestMethod.POST)
     public String signin(@RequestParam Map<String, Object> map,
                          HttpServletRequest request, HttpServletResponse response,
-                         HttpSession session) throws Exception {
+                         HttpSession session, Model model) throws Exception {
         request.setCharacterEncoding("UTF-8");
 
+
         System.out.println("로그인 컨트롤러");
-        
+
         UserDTO user = userService.login(map);
         if (user != null) {
             session.setAttribute("user", user);
+            String userid = (String) session.getAttribute("userid");
+            model.addAttribute("userid", userid);
             return "redirect:/";
         } else {
             System.out.println("로그인 실패");
@@ -62,5 +65,12 @@ public class UserController {
             model.addAttribute("msg", "회원가입에 성공하였습니다.");
         }
         return "redirect:/user/signin";
+    }
+
+    // 로그아웃
+    @RequestMapping(value = "user/logout", method = RequestMethod.GET)
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:/";
     }
 }

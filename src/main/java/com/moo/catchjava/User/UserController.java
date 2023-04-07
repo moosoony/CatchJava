@@ -5,13 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 @Controller
@@ -31,17 +29,24 @@ public class UserController {
     public String signin(@RequestParam Map<String, Object> map,
                          HttpServletRequest request, HttpServletResponse response,
                          HttpSession session, Model model) throws Exception {
+        System.out.println("로그인 컨트롤러");
         request.setCharacterEncoding("UTF-8");
 
-
-        System.out.println("로그인 컨트롤러");
-
         UserDTO user = userService.login(map);
+
         if (user != null) {
+
             session.setAttribute("user", user);
-            String userid = (String) session.getAttribute("userid");
-            model.addAttribute("userid", userid);
+
+            UserDTO sessionUser = (UserDTO) session.getAttribute("user");
+            String userid = sessionUser.getUserid();
+
+          //  model.addAttribute("userid", userid);
+
+            System.out.println("로그인 성공");
+            System.out.println("로그인 한 USER의 id: " + user);
             return "redirect:/";
+
         } else {
             System.out.println("로그인 실패");
             return "user/signin";

@@ -2,7 +2,7 @@
          pageEncoding="UTF-8"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath }" />
 
-<div class="main-banner">
+<div class="main-banner mb-5">
     <div class="row">
         <div class="col-lg-7">
             <div class="header-text">

@@ -69,6 +69,7 @@ public class UserController {
         if (r > 0) {
             model.addAttribute("msg", "회원가입에 성공하였습니다.");
         }
+
         return "redirect:/user/signin";
     }
 

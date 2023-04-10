@@ -43,8 +43,8 @@
 <!-- ***** Header Area End ***** -->
 
 <section class="vh-100 gradient-custom">
-    <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
             <div class="col-10">
                 <div class="card bg-dark text-white" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
@@ -170,6 +170,7 @@
         </div>
     </div>
 </section>
+<div style="height: 80px";></div>
 <!-- ***** Footer Start ***** -->
 <%@ include file="../include/footer.jsp" %>
 <!-- ***** Footer End ***** -->

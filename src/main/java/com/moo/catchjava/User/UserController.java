@@ -41,10 +41,10 @@ public class UserController {
             UserDTO sessionUser = (UserDTO) session.getAttribute("user");
             String userid = sessionUser.getUserid();
 
-          //  model.addAttribute("userid", userid);
+            model.addAttribute("userid", userid);
 
             System.out.println("로그인 성공");
-            System.out.println("로그인 한 USER의 id: " + user);
+            System.out.println("로그인 한 USER의 id: " + userid);
             return "redirect:/";
 
         } else {
@@ -74,9 +74,10 @@ public class UserController {
     }
 
     // 로그아웃
-    @RequestMapping(value = "user/logout", method = RequestMethod.GET)
+    @RequestMapping(value = "user/signout", method = RequestMethod.GET)
     public String logout(HttpSession session) {
         session.invalidate();
+        System.out.println("로그아웃");
         return "redirect:/";
     }
 }

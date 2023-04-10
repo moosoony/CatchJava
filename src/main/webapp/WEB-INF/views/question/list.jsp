@@ -39,8 +39,8 @@
 
                 <div class="container my-3 mt-5">
                     <div class="row my-3">
-                        <div class="col-6">
-                            <a class="btn btn-primary">질문 등록하기</a>
+                        <div class="col-6 main-button">
+                            <a class="btn btn-primary" style="border:none">질문 등록하기</a>
                         </div>
                         <div class="col-6">
                             <div class="input-group">

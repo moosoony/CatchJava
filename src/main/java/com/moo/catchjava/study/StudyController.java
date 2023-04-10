@@ -11,4 +11,10 @@ public class StudyController {
     public String studylist() {
         return "study/list";
     }
+
+    // 스터디 신청 페이지
+    @RequestMapping(value = "study/create", method = RequestMethod.GET)
+    public String studycreate() {
+        return "study/create";
+    }
 }

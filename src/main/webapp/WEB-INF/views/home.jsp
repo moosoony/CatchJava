@@ -12,7 +12,7 @@
 <%-- Head End--%>
 
 
-<body id="section_1">
+<body>
 
 <%-- Header Start--%>
 <%@ include file="include/header.jsp" %>
@@ -139,7 +139,7 @@
         </div>
     </section>
 
-    <section class="section-padding section-bg" id="section_2">
+    <section class="section-padding section-bg" >
         <div class="container">
             <div class="row">
 
@@ -262,7 +262,7 @@
                 <div class="col-lg-5 col-12">
                     <a href="#" class="me-4">Make a donation</a>
 
-                    <a href="#section_4" class="custom-btn btn smoothscroll">Become a volunteer</a>
+                    <a href="" class="custom-btn btn smoothscroll">Become a volunteer</a>
                 </div>
 
             </div>
@@ -270,7 +270,7 @@
     </section>
 
 
-    <section class="section-padding" id="section_3">
+    <section class="section-padding">
         <div class="container">
             <div class="row">
 
@@ -386,7 +386,7 @@
         </div>
     </section>
 
-    <section class="volunteer-section section-padding" id="section_4">
+    <section class="volunteer-section section-padding">
         <div class="container">
             <div class="row">
 

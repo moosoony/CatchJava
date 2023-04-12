@@ -33,6 +33,8 @@ public class UserController {
         request.setCharacterEncoding("UTF-8");
 
         UserDTO user = userService.login(map);
+        System.out.println("UserDTO user"+user);
+
 
         if (user != null) {
 

@@ -7,52 +7,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <title>CatchJava - Awesome HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="../resources/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../resources/assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="../resources/assets/css/owl.css">
-    <link rel="stylesheet" href="../resources/assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <!--
-
-    TemplateMo 579 Cyborg Gaming
-
-    https://templatemo.com/tm-579-cyborg-gaming
-
-    -->
+    <%@ include file="../include/head.jsp" %>
 </head>
 <body>
-<%--<!-- ***** Preloader Start ***** -->--%>
-<%--<%@ include file="../include/preloader.jsp" %>--%>
-<%--<!-- ***** Preloader End ***** -->--%>
 
 <!-- ***** Header Area Start ***** -->
 <%@ include file="../include/header.jsp" %>
 <!-- ***** Header Area End ***** -->
 
-<section class="vh-100 gradient-custom">
-    <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-10">
-                <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                    <div class="card-body p-5 text-center">
-                        <form role="form" action="/user/signup" method="post">
-                        <div class="mb-md-5 mt-md-4 pb-5">
+<%-- Nav start--%>
+<%@ include file="../include/navbar.jsp" %>
+<%-- Nav End--%>
 
+<section class="volunteer-section section-padding justify-content-center" id="section_4">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+
+            <div class="col-lg-6 col-12">
+                <form class="custom-form volunteer-form mb-5 mb-lg-0" role="form" action="/user/signup" method="post">
                             <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
-                            <p class="text-white-50 mb-5">Please enter your Information!</p>
+                            <p class="text-dark mb-5">Please enter your Information!</p>
 
 
                             <div class="row justify-content-center">
@@ -146,8 +120,8 @@
 
                             <%--                            <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>--%>
                             <div class="justify-content-center">
-                                <button class="btn btn-outline-light btn-lg px-5 m-3" type="reset">Reset</button>
-                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Sign Up</button>
+                                <button class="custom-btn custom-border-btn btn" type="reset">Reset</button>
+                                <button class="custom-btn custom-border-btn btn" type="submit">Sign Up</button>
                             </div>
 
 
@@ -170,9 +144,12 @@
         </div>
     </div>
 </section>
-<div style="height: 80px";></div>
 <!-- ***** Footer Start ***** -->
 <%@ include file="../include/footer.jsp" %>
 <!-- ***** Footer End ***** -->
+
+<!-- JAVASCRIPT FILES Start-->
+<%@ include file="../include/home_javascrpt.jsp" %>
+<!-- JAVASCRIPT FILES End-->
 </body>
 </html>

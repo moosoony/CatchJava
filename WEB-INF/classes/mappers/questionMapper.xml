@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moo.catchjava.questionMapper">
+
+    <!--    Question 작성 -->
+    <insert id="insert" parameterType="QuestionDTO">
+        insert into question(id, userid, subject, content, createdate, modifydate, viewcnt)
+        values (#{id}, #{userid}, #{subject}, #{content}, now(), now(), 0)
+    </insert>
+
+    <!--    Question 리스트 -->
+    <select id="list" resultType="QuestionDTO">
+        select *
+        from question
+        order by createdate desc
+    </select>
+
+</mapper>

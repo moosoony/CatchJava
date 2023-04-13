@@ -3,145 +3,311 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath }"/>
 <%@ page session="true" %>
-<html>
-<head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-  <title>CatchJava - Awesome HTML5 Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<%-- Head Start--%>
+<%@ include file="../include/head.jsp" %>
+<%-- Head End--%>
 
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="/resources/assets/css/fontawesome.css">
-  <link rel="stylesheet" href="/resources/assets/css/templatemo-cyborg-gaming.css">
-  <link rel="stylesheet" href="/resources/assets/css/owl.css">
-  <link rel="stylesheet" href="/resources/assets/css/animate.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-</head>
 <body>
-<!-- ***** Preloader Start ***** -->
-<%@ include file="../include/preloader.jsp" %>
-<!-- ***** Preloader End ***** -->
 
-<!-- ***** Header Area Start ***** -->
+<%-- Header Start--%>
 <%@ include file="../include/header.jsp" %>
-<!-- ***** Header Area End ***** -->
+<%-- Header End--%>
 
-<div class="most-popular">
-  <div class="row">
-    <div class="col-lg-12 mt-5">
-      <div class="heading-section">
-        <h4><em>ALL</em> Study List</h4>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-01.jpg" alt="">
-            <h4>Fortnite<br><span>Sandbox</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
+<%-- Nav start--%>
+<%@ include file="../include/navbar.jsp" %>
+<%-- Nav End--%>
+
+
+<main>
+
+    <section class="cta-section section-padding section-bg">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-lg-5 col-12 ms-auto">
+                    <h2 class="mb-0">Make a <br> Study.</h2>
+                </div>
+
+                <div class="col-lg-5 col-12">
+                    <a href="#" class="me-4">Make a study</a>
+
+                    <a href="#section_4" class="custom-btn btn smoothscroll">Make a study</a>
+                </div>
+
+            </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-02.jpg" alt="">
-            <h4>PubG<br><span>Battle S</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
+    </section>
+
+
+    <section class="news-section section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-7 col-12">
+                <div class="news-block">
+                    <div class="news-block-top">
+                        <a href="news-detail.html">
+                            <img src="/resources/images/news/medium-shot-volunteers-with-clothing-donations.jpg"
+                                 class="news-image img-fluid" alt="">
+                        </a>
+
+                        <div class="news-category-block">
+                            <a href="#" class="category-block-link">
+                                Lifestyle,
+                            </a>
+
+                            <a href="#" class="category-block-link">
+                                Clothing Donation
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="news-block-info">
+                        <div class="d-flex mt-2">
+                            <div class="news-block-date">
+                                <p>
+                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                    October 18, 2036
+                                </p>
+                            </div>
+
+                            <div class="news-block-author mx-5">
+                                <p>
+                                    <i class="bi-person custom-icon me-1"></i>
+                                    By Admin
+                                </p>
+                            </div>
+
+                            <div class="news-block-comment">
+                                <p>
+                                    <i class="bi-chat-left custom-icon me-1"></i>
+                                    32 Comments
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-block-title mb-2">
+                            <h4><a href="news-detail.html" class="news-block-title-link">Clothing donation to
+                                urban area</a></h4>
+                        </div>
+
+                        <div class="news-block-body">
+                            <p>This is a Bootstrap 5.2.2 CSS template for charity organization websites. You can
+                                feel free to use it. Please tell your friends about TemplateMo website. Thank
+                                you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-block mt-3">
+                    <div class="news-block-top">
+                        <a href="news-detail.html">
+                            <img src="/resources/images/news/medium-shot-people-collecting-foodstuff.jpg"
+                                 class="news-image img-fluid" alt="">
+                        </a>
+
+                        <div class="news-category-block">
+                            <a href="#" class="category-block-link">
+                                Food,
+                            </a>
+
+                            <a href="#" class="category-block-link">
+                                Donation,
+                            </a>
+
+                            <a href="#" class="category-block-link">
+                                Caring
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="news-block-info">
+                        <div class="d-flex mt-2">
+                            <div class="news-block-date">
+                                <p>
+                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                    October 12, 2036
+                                </p>
+                            </div>
+
+                            <div class="news-block-author mx-5">
+                                <p>
+                                    <i class="bi-person custom-icon me-1"></i>
+                                    By Admin
+                                </p>
+                            </div>
+
+                            <div class="news-block-comment">
+                                <p>
+                                    <i class="bi-chat-left custom-icon me-1"></i>
+                                    35 Comments
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-block-title mb-2">
+                            <h4><a href="news-detail.html" class="news-block-title-link">Food donation area</a>
+                            </h4>
+                        </div>
+
+                        <div class="news-block-body">
+                            <p>You are not allowed to redistribute this template ZIP file on any other template
+                                collection website. Please <a href="https://templatemo.com/contact"
+                                                              target="_blank">contact TemplateMo</a> for more information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mx-auto mt-4 mt-lg-0">
+                <form class="custom-form search-form" action="#" method="post" role="form">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+
+                    <button type="submit" class="form-control">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+
+                <h5 class="mt-5 mb-3">Recent news</h5>
+
+                <div class="news-block news-block-two-col d-flex mt-4">
+                    <div class="news-block-two-col-image-wrap">
+                        <a href="news-detail.html">
+                            <img src="/resources/images/news/africa-humanitarian-aid-doctor.jpg"
+                                 class="news-image img-fluid" alt="">
+                        </a>
+                    </div>
+
+                    <div class="news-block-two-col-info">
+                        <div class="news-block-title mb-2">
+                            <h6><a href="news-detail.html" class="news-block-title-link">Food donation area</a>
+                            </h6>
+                        </div>
+
+                        <div class="news-block-date">
+                            <p>
+                                <i class="bi-calendar4 custom-icon me-1"></i>
+                                October 16, 2036
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-block news-block-two-col d-flex mt-4">
+                    <div class="news-block-two-col-image-wrap">
+                        <a href="news-detail.html">
+                            <img src="/resources/images/news/close-up-happy-people-working-together.jpg"
+                                 class="news-image img-fluid" alt="">
+                        </a>
+                    </div>
+
+                    <div class="news-block-two-col-info">
+                        <div class="news-block-title mb-2">
+                            <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a>
+                            </h6>
+                        </div>
+
+                        <div class="news-block-date">
+                            <p>
+                                <i class="bi-calendar4 custom-icon me-1"></i>
+                                October 24, 2036
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-block d-flex flex-column">
+                    <h5 class="mb-3">Categories</h5>
+
+                    <a href="#" class="category-block-link">
+                        Drinking water
+                        <span class="badge">20</span>
+                    </a>
+
+                    <a href="#" class="category-block-link">
+                        Food Donation
+                        <span class="badge">30</span>
+                    </a>
+
+                    <a href="#" class="category-block-link">
+                        Children Education
+                        <span class="badge">10</span>
+                    </a>
+
+                    <a href="#" class="category-block-link">
+                        Poverty Development
+                        <span class="badge">15</span>
+                    </a>
+
+                    <a href="#" class="category-block-link">
+                        Clothing Donation
+                        <span class="badge">20</span>
+                    </a>
+                </div>
+
+                <div class="tags-block">
+                    <h5 class="mb-3">Tags</h5>
+
+                    <a href="#" class="tags-block-link">
+                        Donation
+                    </a>
+
+                    <a href="#" class="tags-block-link">
+                        Clothing
+                    </a>
+
+                    <a href="#" class="tags-block-link">
+                        Food
+                    </a>
+
+                    <a href="#" class="tags-block-link">
+                        Children
+                    </a>
+
+                    <a href="#" class="tags-block-link">
+                        Education
+                    </a>
+
+                    <a href="#" class="tags-block-link">
+                        Poverty
+                    </a>
+
+                    <a href="#" class="tags-block-link">
+                        Clean Water
+                    </a>
+                </div>
+
+                <form class="custom-form subscribe-form" action="#" method="post" role="form">
+                    <h5 class="mb-4">Newsletter Form</h5>
+
+                    <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
+                           class="form-control" placeholder="Email Address" required>
+
+                    <div class="col-lg-12 col-12">
+                        <button type="submit" class="form-control">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-03.jpg" alt="">
-            <h4>Dota2<br><span>Steam-X</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-04.jpg" alt="">
-            <h4>CS-GO<br><span>Legendary</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
-        </div>
-          <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-04.jpg" alt="">
-            <h4>CS-GO<br><span>Legendary</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
-        </div>
-          <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-04.jpg" alt="">
-            <h4>CS-GO<br><span>Legendary</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-07.jpg" alt="">
-            <h4>Warface<br><span>Max 3D</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="item">
-            <img src="/resources/assets/images/popular-08.jpg" alt="">
-            <h4>Warcraft<br><span>Legend</span></h4>
-            <ul>
-              <li><i class="fa fa-star"></i> 4.8</li>
-              <li><i class="fa fa-download"></i> 2.3M</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="main-button">
-            <a href="../original/browse.html">Discover Popular</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+</section>
+</main>
+
+<%--	Footer Start--%>
+<%@ include file="../include/footer.jsp" %>
+<%--	Footer End--%>
+
+<!-- JAVASCRIPT FILES Start-->
+<%@ include file="../include/home_javascrpt.jsp" %>
+<!-- JAVASCRIPT FILES End-->
 
 
 </body>
-<!-- Scripts -->
-<!-- Bootstrap core JavaScript -->
-<script src="/resources/vendor/jquery/jquery.min.js"></script>
-<script src="/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="/resources/assets/js/isotope.min.js"></script>
-<script src="/resources/assets/js/owl-carousel.js"></script>
-<script src="/resources/assets/js/tabs.js"></script>
-<script src="/resources/assets/js/popup.js"></script>
-<script src="/resources/assets/js/custom.js"></script>
 </html>

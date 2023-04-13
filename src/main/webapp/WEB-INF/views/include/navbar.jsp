@@ -44,7 +44,7 @@
                 <%--        </li>--%>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_4">Q&A</a>
+                    <a class="nav-link click-scroll" href="${contextPath}/question/list">Q&A</a>
                 </li>
 
                 <c:if test="${user.userid == role}">

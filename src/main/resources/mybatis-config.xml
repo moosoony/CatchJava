@@ -5,7 +5,9 @@
 <configuration>
 
     <typeAliases>
-        <typeAlias alias="UserDTO" type="com.moo.catchjava.User.UserDTO"/>
+        <typeAlias alias="UserDTO" type="com.moo.catchjava.DTO.UserDTO"/>
+        <typeAlias alias="QuestionDTO" type="com.moo.catchjava.DTO.QuestionDTO"/>
+
     </typeAliases>
 
 </configuration>

@@ -1,28 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<html>
-<head>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath }"/>
+<%@ page session="true" %>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <title>CatchJava - Awesome HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<%-- Head Start--%>
+<%@ include file="../include/head.jsp" %>
+<%-- Head End--%>
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="/resources/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="/resources/assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="/resources/assets/css/owl.css">
-    <link rel="stylesheet" href="/resources/assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<body>
 
-</head>
+<%-- Header Start--%>
+<%@ include file="../include/header.jsp" %>
+<%-- Header End--%>
+
+<%-- Nav start--%>
+<%@ include file="../include/navbar.jsp" %>
+<%-- Nav End--%>
+
+
+<main>
 <body>
 <!-- ***** Preloader Start ***** -->
 <%@ include file="../include/preloader.jsp" %>
@@ -40,7 +41,7 @@
                 <div class="container my-3 mt-5">
                     <div class="row my-3">
                         <div class="col-6 main-button">
-                            <a class="btn btn-primary" style="border:none">질문 등록하기</a>
+                            <a class="btn btn-primary" href="${contextPath}/question/insert" style="border:none">질문 등록하기</a>
                         </div>
                         <div class="col-6">
                             <div class="input-group">
@@ -69,15 +70,15 @@
     </div>
 </div>
 </div>
-</body>
-<!-- Scripts -->
-<!-- Bootstrap core JavaScript -->
-<script src="/resources/vendor/jquery/jquery.min.js"></script>
-<script src="/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <%--	Footer Start--%>
+    <%@ include file="../include/footer.jsp" %>
+    <%--	Footer End--%>
 
-<script src="/resources/assets/js/isotope.min.js"></script>
-<script src="/resources/assets/js/owl-carousel.js"></script>
-<script src="/resources/assets/js/tabs.js"></script>
-<script src="/resources/assets/js/popup.js"></script>
-<script src="/resources/assets/js/custom.js"></script>
+    <!-- JAVASCRIPT FILES Start-->
+    <%@ include file="../include/home_javascrpt.jsp" %>
+    <!-- JAVASCRIPT FILES End-->
+
+
+</body>
+</main>
 </html>

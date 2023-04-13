@@ -6,6 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import javax.inject.Inject;
+import java.util.List;
 
 @Repository
 public class QuestionDAOImpl implements QuestionDAO {
@@ -19,4 +20,11 @@ public class QuestionDAOImpl implements QuestionDAO {
     public int insert(QuestionDTO questionDTO) throws Exception {
         return sqlSession.insert(nameSpace+".insert",questionDTO);
     }
+
+    // Question 리스트
+    @Override
+    public List<QuestionDTO> list() throws Exception {
+        return sqlSession.selectList(nameSpace+".list");
+    }
+
 }

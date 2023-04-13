@@ -33,16 +33,77 @@
 <%@ include file="../include/header.jsp" %>
 <!-- ***** Header Area End ***** -->
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="page-content">
+                        <section class="cta-section section-padding section-bg">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center">
 
-                <div class="container my-3 mt-5">
-                    <div class="row my-3">
-                        <div class="col-6 main-button">
-                            <a class="btn btn-primary" href="${contextPath}/question/insert" style="border:none">질문 등록하기</a>
+                                    <div class="col-lg-5 col-12 ms-auto">
+                                        <h2 class="mb-0">Q&A<br> Board</h2>
+                                    </div>
+
+                                    <div class="col-lg-5 col-12">
+                                        <a href="#" class="me-4">Do you have any questions?</a>
+
+                                        <a href="#section_4" class="custom-btn btn smoothscroll">Register question</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+<section class="contact-section section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 text-center">
+                <div class="contact-info-wrap">
+                    <h2>Q&A List</h2>
+
+                        <div class="d-flex flex-column justify-content-center ms-3">
                         </div>
+
+
+                    <div class="contact-info">
+                        <h5 class="mb-5">Contact Infomation</h5>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-12 mx-auto">
+                <form class="custom-form contact-form" action="#" method="post" role="form">
+
+                    <table class="table">
+                        <thead class="table-primary">
+                        <tr class="text-center">
+                            <th>번호</th>
+                            <th style="width:50%">제목</th>
+                            <th>글쓴이</th>
+                            <th>작성일시</th>
+                            <th>조회수</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <c:forEach items="${list}" var="list">
+                            <tr>
+                                <td>${list.id}</td>
+                                <td>${list.subject}</td>
+                                <td>${list.userid}</td>
+                                <td>${list.createdate}</td>
+                                <td>${list.viewcnt}</td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
                         <div class="col-6">
                             <div class="input-group">
                                 <input type="text" id="search_kw" class="form-control">
@@ -61,15 +122,20 @@
                         <th>조회수</th>
                     </tr>
                     </thead>
+
                     <tbody>
+                    <c:forEach items="${list}" var="list">
+                        <tr>
+                            <td>${list.id}</td>
+                            <td>${list.subject}</td>
+                            <td>${list.userid}</td>
+                            <td>${list.createdate}</td>
+                            <td>${list.viewcnt}</td>
+                        </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
 
-            </div>
-        </div>
-    </div>
-</div>
-</div>
     <%--	Footer Start--%>
     <%@ include file="../include/footer.jsp" %>
     <%--	Footer End--%>

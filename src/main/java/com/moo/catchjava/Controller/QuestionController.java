@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 public class QuestionController {
@@ -17,7 +18,12 @@ public class QuestionController {
 
     // Question 리스트 페이지
     @RequestMapping(value = "question/list", method = RequestMethod.GET)
-    public String questionlist() {
+    public String questionlist(Model model) throws Exception {
+        List<QuestionDTO> list = null;
+        list = questionService.list();
+
+        model.addAttribute("list", list);
+
         return "question/list";
     }
 
@@ -41,7 +47,6 @@ public class QuestionController {
         }else {
             System.out.println("Question Failed");
         }
-
 
         return "redirect:/question/list";
     }

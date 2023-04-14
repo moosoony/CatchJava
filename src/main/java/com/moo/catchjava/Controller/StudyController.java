@@ -2,17 +2,17 @@ package com.moo.catchjava.Controller;
 
 import com.moo.catchjava.DTO.StudyDTO;
 import com.moo.catchjava.Service.StudyService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class StudyController {
-    @Inject
+    @Autowired
     StudyService studyService;
 
     //    스터디 목록 페이지

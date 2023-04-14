@@ -1,3 +1,16 @@
+/*
+  CREATE TABLE `catchjava`.`question` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `userid` VARCHAR(45) NULL,
+  `subject` VARCHAR(45) NULL,
+  `content` TEXT NULL,
+  `createdate` VARCHAR(45) NULL,
+  `modifydate` VARCHAR(45) NULL,
+  `viewcnt` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+*/
 package com.moo.catchjava.DTO;
 
 public class QuestionDTO {

@@ -6,8 +6,8 @@ import java.util.Map;
 
 public interface UserService {
     // 회원가입
-     int insert(UserDTO userDTO) throws Exception;
+     public int insert(UserDTO userDTO) throws Exception;
 
      // 로그인
-   UserDTO login(Map<String, Object> map) throws Exception;
+   public UserDTO login(Map<String, Object> map) throws Exception;
 }

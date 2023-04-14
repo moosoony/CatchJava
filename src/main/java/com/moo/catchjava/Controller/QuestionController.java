@@ -4,6 +4,7 @@ import com.moo.catchjava.DTO.QuestionDTO;
 import com.moo.catchjava.Service.QuestionService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -49,5 +50,21 @@ public class QuestionController {
         }
 
         return "redirect:/question/list";
+    }
+
+    // Question 상세 페이지
+    @RequestMapping(value = "question/detail/{id}", method = RequestMethod.GET)
+    public String questiondetail(@PathVariable ("id") Long id, Model model) throws Exception {
+        System.out.println("상세페이지 컨트롤러");
+        QuestionDTO questionDTO = questionService.detail(id);
+        System.out.println("Question: "+questionDTO);
+
+        if(questionDTO != null){
+            model.addAttribute("question", questionDTO);
+            return "question/detail";
+        }else {
+            System.out.println("상세보기 실패");
+            return "redirect:/question/list";
+        }
     }
 }

@@ -88,7 +88,7 @@
                         <c:forEach items="${list}" var="list">
                             <tr class="text-center">
                                 <td>${list.id}</td>
-                                <td>${list.subject}</td>
+                                <td> <a href="${contextPath}/question/detail/${list.id}">${list.subject}</a></td>
                                 <td>${list.userid}</td>
                                 <td>${list.createdate}</td>
                                 <td>${list.viewcnt}</td>

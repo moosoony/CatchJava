@@ -24,4 +24,9 @@ public class QuestionServiceImpl implements QuestionService {
     public List<QuestionDTO> list() throws Exception{
         return questionDAO.list();
     }
+
+    @Override
+    public QuestionDTO detail(Long id) throws Exception {
+        return questionDAO.detail(id);
+    }
 }

@@ -27,4 +27,10 @@ public class QuestionDAOImpl implements QuestionDAO {
         return sqlSession.selectList(nameSpace+".list");
     }
 
+    // Question 상세
+    @Override
+    public QuestionDTO detail(Long id) throws Exception {
+        return sqlSession.selectOne(nameSpace+".detail", id);
+    }
+
 }

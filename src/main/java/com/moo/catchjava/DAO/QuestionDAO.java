@@ -10,4 +10,7 @@ public interface QuestionDAO {
 
     // Question 리스트
     public List<QuestionDTO> list() throws Exception;
+    
+    // Question 상세
+    public QuestionDTO detail(Long id) throws Exception;
 }

@@ -45,11 +45,13 @@ public class QuestionController {
 
         if(r>0){
             model.addAttribute("msg", "질문등록에 성공하였습니다.");
+            return "redirect:/question/list";
         }else {
             System.out.println("Question Failed");
+            return "redirect:/question/insert";
         }
 
-        return "redirect:/question/list";
+
     }
 
     // Question 상세 페이지

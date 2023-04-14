@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 파일이름을 지칭하는 네임스페이스 -->
+<mapper namespace="com.moo.catchjava.studyMapper">
+
+    <!--    Study 신청 -->
+    <insert id="insert" parameterType="StudyDTO">
+        insert into study(leader, personnel, subject, name, content, startdate, enddate, applicationdate, approval, etc)
+        values (#{leader}, #{personnel}, #{subject}, #{name}, #{content}, #{startdate}, #{enddate}, now(), 'F', #{etc})
+    </insert>
+
+</mapper>

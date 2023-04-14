@@ -44,7 +44,7 @@
                                     <div class="col-lg-5 col-12">
                                         <a href="#" class="me-4">Do you have any questions?</a>
 
-                                        <a href="#section_4" class="custom-btn btn smoothscroll">Register question</a>
+                                        <a href="${contextPath}/question/insert" class="custom-btn btn smoothscroll">Register question</a>
                                     </div>
 
                                 </div>
@@ -73,8 +73,8 @@
             <div class="col-lg-12 col-12 mx-auto">
                 <form class="custom-form contact-form" action="#" method="post" role="form">
 
-                    <table class="table">
-                        <thead class="table-primary">
+                    <table class="table table">
+                        <thead>
                         <tr class="text-center">
                             <th>번호</th>
                             <th style="width:50%">제목</th>
@@ -86,9 +86,9 @@
 
                         <tbody>
                         <c:forEach items="${list}" var="list">
-                            <tr>
+                            <tr class="text-center">
                                 <td>${list.id}</td>
-                                <td>${list.subject}</td>
+                                <td> <a href="${contextPath}/question/detail/${list.id}">${list.subject}</a></td>
                                 <td>${list.userid}</td>
                                 <td>${list.createdate}</td>
                                 <td>${list.viewcnt}</td>
@@ -103,38 +103,6 @@
         </div>
     </div>
 </section>
-
-                        <div class="col-6">
-                            <div class="input-group">
-                                <input type="text" id="search_kw" class="form-control">
-                                <button class="btn btn-outline-primary" type="button" id="btn_search">찾기</button>
-                            </div>
-                        </div>
-                    </div>
-
-                <table class="table">
-                    <thead class="table-primary">
-                    <tr class="text-center">
-                        <th>번호</th>
-                        <th style="width:50%">제목</th>
-                        <th>글쓴이</th>
-                        <th>작성일시</th>
-                        <th>조회수</th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    <c:forEach items="${list}" var="list">
-                        <tr>
-                            <td>${list.id}</td>
-                            <td>${list.subject}</td>
-                            <td>${list.userid}</td>
-                            <td>${list.createdate}</td>
-                            <td>${list.viewcnt}</td>
-                        </tr>
-                    </c:forEach>
-                    </tbody>
-                </table>
 
     <%--	Footer Start--%>
     <%@ include file="../include/footer.jsp" %>

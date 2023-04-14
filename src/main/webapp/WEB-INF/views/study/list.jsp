@@ -36,7 +36,7 @@
                 <div class="col-lg-5 col-12">
                     <a href="#" class="me-4">Make a study</a>
 
-                    <a href="#section_4" class="custom-btn btn smoothscroll">Make a study</a>
+                    <a href="${contextPath}/study/insert" class="custom-btn btn smoothscroll">Make a study</a>
                 </div>
 
             </div>

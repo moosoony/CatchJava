@@ -17,4 +17,11 @@
         order by createdate desc
     </select>
 
+    <!--    Question 상세 -->
+    <select id="detail" parameterType="java.lang.Long" resultType="QuestionDTO">
+        select *
+        from question
+        where id = #{id}
+    </select>
+
 </mapper>

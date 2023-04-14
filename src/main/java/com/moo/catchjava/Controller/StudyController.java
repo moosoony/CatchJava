@@ -13,8 +13,8 @@ public class StudyController {
     }
 
     // 스터디 신청 페이지
-    @RequestMapping(value = "study/create", method = RequestMethod.GET)
-    public String studycreate() {
-        return "study/create";
+    @RequestMapping(value = "study/insert", method = RequestMethod.GET)
+    public String studyinsert() {
+        return "study/insert";
     }
 }

@@ -108,7 +108,7 @@
                                         <div class="form-outline form-white col-5">
                                             <label class="form-label" for="sex">Sex</label>
                                             <select class="form-control form-control-lg" id ="sex" name="sex">
-                                                <option value=Select">Select</option>
+                                                <option value="Select">Select</option>
                                                 <option value="Women">Women</option>
                                                 <option value="Man">Man</option>
                                             </select>
